@@ -1,226 +1,117 @@
 ┌──(kali㉿kali)-[~]
-└─$ wget -r -l 1 -A .js https://buyawp.gg/
+└─$ nmap -sC -sV buyawp.gg -p-
 
---2025-05-02 16:23:41--  https://buyawp.gg/
-Resolving buyawp.gg (buyawp.gg)... 188.114.97.7, 188.114.96.7, 2a06:98c1:3120::7, ...
-Connecting to buyawp.gg (buyawp.gg)|188.114.97.7|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: ‘buyawp.gg/index.html.tmp’
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-05-02 16:21 EDT
+Nmap scan report for buyawp.gg (188.114.97.7)
+Host is up (0.052s latency).
+Other addresses for buyawp.gg (not scanned): 188.114.96.7 2a06:98c1:3121::7 2a06:98c1:3120::7
+Not shown: 65520 filtered tcp ports (no-response), 2 filtered tcp ports (host-unreach)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://buyawp.gg/
+|_http-server-header: cloudflare
+443/tcp  open  ssl/http Cloudflare http proxy
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: BUYAWP - #1 Undetected Roblox Executor
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: cloudflare
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+2052/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://buyawp.gg/
+|_http-server-header: cloudflare
+2053/tcp open  ssl/http nginx
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+|_http-server-header: cloudflare
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: BUYAWP - #1 Undetected Roblox Executor
+2082/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://buyawp.gg/
+|_http-server-header: cloudflare
+2083/tcp open  ssl/http nginx
+|_http-title: BUYAWP - #1 Undetected Roblox Executor
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: cloudflare
+2086/tcp open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://buyawp.gg/
+|_http-server-header: cloudflare
+2087/tcp open  ssl/http nginx
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: cloudflare
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+2095/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://buyawp.gg/
+2096/tcp open  ssl/http nginx
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+|_ssl-date: TLS randomness does not represent time
+|_http-title: BUYAWP - #1 Undetected Roblox Executor
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+8080/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://buyawp.gg/
+8443/tcp open  ssl/http Cloudflare http proxy
+| ssl-cert: Subject: commonName=buyawp.gg
+| Subject Alternative Name: DNS:buyawp.gg
+| Not valid before: 2025-04-05T23:41:02
+|_Not valid after:  2025-07-05T00:41:01
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: BUYAWP - #1 Undetected Roblox Executor
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-server-header: cloudflare
+8880/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Did not follow redirect to https://buyawp.gg/
 
-buyawp.gg/index.htm     [ <=>             ]  17.03K  --.-KB/s    in 0.005s  
-
-2025-05-02 16:23:41 (3.51 MB/s) - ‘buyawp.gg/index.html.tmp’ saved [17437]
-
-Loading robots.txt; please ignore errors.
---2025-05-02 16:23:41--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:41--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:41--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:41--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
---2025-05-02 16:23:42--  https://buyawp.gg/robots.txt
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://buyawp.gg/robots.txt [following]
-20 redirections exceeded.
-Removing buyawp.gg/index.html.tmp since it should be rejected.
-
---2025-05-02 16:23:42--  https://buyawp.gg/_next/static/chunks/webpack-163a2522e5bd282f.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/webpack-163a2522e5bd282f.js’
-
-buyawp.gg/_next/sta     [ <=>             ]   3.47K  --.-KB/s    in 0s      
-
-2025-05-02 16:23:42 (74.6 MB/s) - ‘buyawp.gg/_next/static/chunks/webpack-163a2522e5bd282f.js’ saved [3557]
-
---2025-05-02 16:23:42--  https://buyawp.gg/_next/static/chunks/fd9d1056-6922f449a204c2cc.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/fd9d1056-6922f449a204c2cc.js’
-
-buyawp.gg/_next/sta     [         <=>     ]   4.70K  --.-KB/s    in 15m 0s  
-
-2025-05-02 16:38:42 (5.34 B/s) - Read error at byte 4809 (Connection timed out).Retrying.
-
---2025-05-02 16:38:43--  (try: 2)  https://buyawp.gg/_next/static/chunks/fd9d1056-6922f449a204c2cc.js
-Connecting to buyawp.gg (buyawp.gg)|188.114.97.7|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/fd9d1056-6922f449a204c2cc.js’
-
-buyawp.gg/_next/sta     [ <=>             ] 168.78K  --.-KB/s    in 0.1s    
-
-2025-05-02 16:38:44 (1.33 MB/s) - ‘buyawp.gg/_next/static/chunks/fd9d1056-6922f449a204c2cc.js’ saved [172834]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/117-d17cc7abaa9e39e1.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/117-d17cc7abaa9e39e1.js’
-
-buyawp.gg/_next/sta     [ <=>             ] 120.63K  --.-KB/s    in 0.02s   
-
-2025-05-02 16:38:44 (5.81 MB/s) - ‘buyawp.gg/_next/static/chunks/117-d17cc7abaa9e39e1.js’ saved [123528]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/main-app-8b98336d1af6a7b9.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/main-app-8b98336d1af6a7b9.js’
-
-buyawp.gg/_next/sta     [ <=>             ]     459  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (12.2 MB/s) - ‘buyawp.gg/_next/static/chunks/main-app-8b98336d1af6a7b9.js’ saved [459]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/653-5066566cdaefa1ed.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/653-5066566cdaefa1ed.js’
-
-buyawp.gg/_next/sta     [ <=>             ] 113.82K  --.-KB/s    in 0.02s   
-
-2025-05-02 16:38:44 (7.07 MB/s) - ‘buyawp.gg/_next/static/chunks/653-5066566cdaefa1ed.js’ saved [116555]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/785-9ab08ee0ad001b3d.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/785-9ab08ee0ad001b3d.js’
-
-buyawp.gg/_next/sta     [ <=>             ]  14.05K  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (242 MB/s) - ‘buyawp.gg/_next/static/chunks/785-9ab08ee0ad001b3d.js’ saved [14387]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/525-a69035966aa4a6c4.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/525-a69035966aa4a6c4.js’
-
-buyawp.gg/_next/sta     [ <=>             ]   5.56K  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (142 MB/s) - ‘buyawp.gg/_next/static/chunks/525-a69035966aa4a6c4.js’ saved [5696]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/app/page-674533889aaffe1c.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/app/page-674533889aaffe1c.js’
-
-buyawp.gg/_next/sta     [ <=>             ]   7.78K  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (272 MB/s) - ‘buyawp.gg/_next/static/chunks/app/page-674533889aaffe1c.js’ saved [7962]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/598-8d0a70c12ca56bf8.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/598-8d0a70c12ca56bf8.js’
-
-buyawp.gg/_next/sta     [ <=>             ]  20.39K  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (277 MB/s) - ‘buyawp.gg/_next/static/chunks/598-8d0a70c12ca56bf8.js’ saved [20875]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/app/layout-edd879fbea9e6294.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/app/layout-edd879fbea9e6294.js’
-
-buyawp.gg/_next/sta     [ <=>             ]   3.36K  --.-KB/s    in 0s      
-
-2025-05-02 16:38:44 (101 MB/s) - ‘buyawp.gg/_next/static/chunks/app/layout-edd879fbea9e6294.js’ saved [3441]
-
---2025-05-02 16:38:44--  https://buyawp.gg/_next/static/chunks/polyfills-42372ed130431b0a.js
-Reusing existing connection to buyawp.gg:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: ‘buyawp.gg/_next/static/chunks/polyfills-42372ed130431b0a.js’
-
-buyawp.gg/_next/sta     [ <=>             ] 109.96K   614KB/s    in 0.2s    
-
-2025-05-02 16:38:44 (614 KB/s) - ‘buyawp.gg/_next/static/chunks/polyfills-42372ed130431b0a.js’ saved [112594]
-
-FINISHED --2025-05-02 16:38:44--
-Total wall clock time: 15m 3s
-Downloaded: 12 files, 585K in 15m 0s (666 B/s)
-                                                  
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1998.40 seconds
